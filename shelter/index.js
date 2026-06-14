@@ -1,0 +1,1 @@
+console.log('Maximum score: 100 points')
