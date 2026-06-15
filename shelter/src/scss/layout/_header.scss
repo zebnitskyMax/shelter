@@ -1,0 +1,88 @@
+.header.pets {
+    background: $color-bg;
+}
+
+.header {
+    background-image: url(./../img/start-screen.png);
+    background-size: cover;
+    background-repeat: repeat;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px 0px;
+
+        .logo a {
+            color: $color-h2-logo;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 35px;
+            letter-spacing: 0.06em;
+        }
+
+        .logo a.pets {
+            color: $color-h2-logo-dark;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 35px;
+            letter-spacing: 0.06em;
+        }
+
+        .logo-text {
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: 0.1em;
+            color: $color-logo-text;
+        }
+
+        .logo-text.pets {
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: 0.1em;
+            color: $color-logo-text-dark;
+        }
+
+        .header-nav {
+            .header-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                .header-item {
+                    margin-left: 35px;
+                }
+
+                .header-link {
+                    position: relative;
+                    transition: all .5s;
+
+                    &::after {
+                        content: '';
+                        background: $color-bg-underline;
+                        width: 0;
+                        height: 3px;
+                        position: absolute;
+                        left: 0;
+                        bottom: -5px;
+                        // opacity: 0;
+                        pointer-events: none;
+                    }
+
+                    &:hover::after,
+                    &:focus::after {
+                        // opacity: 1;
+                        width: 100%;
+                        transition: 0.7s all;
+                    }
+
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
