@@ -1,0 +1,95 @@
+.our-friends {
+    background: $color-bg-about;
+    text-align: center;
+
+    .wrap {
+        .our-friends__h2 {
+            padding: 80px 0 30px;
+        }
+
+        .our-friends__h2.pets {
+            padding: 60px 0 30px;
+        }
+
+        .our-friends__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 75px;
+
+            .our-friend__cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 90px;
+
+                .our-friends__card-content {
+                    background: $color-bg-card-about;
+
+                    &:hover {
+                        .pet-image {
+                            transform: scale(0.9);
+                            transition: 0.7s;
+                        }
+
+                        .our-friend_card-btn {
+                            border: none;
+                            background-color: $color-bg-btn;
+                        }
+                    }
+
+                    .our-friends__card-h4 {
+                        margin-bottom: 30px;
+                    }
+
+                    .our-friend_card-btn {
+                        width: 190px;
+                        font-size: 19px;
+                        background-color: $color-bg-card-about;
+                        border: 2px solid $color-bg-btn;
+                        border-radius: 100px;
+                        margin-bottom: 30px;
+
+                        &:hover {
+                            border: none;
+                            background-color: $color-bg-btn;
+                        }
+                    }
+                }
+            }
+
+            .arrow-left {
+                transform: rotate(180deg);
+                margin-right: 38px;
+            }
+
+            .arrow-right {
+                margin-left: 38px;
+            }
+        }
+
+        // .our-friends__btn {
+        //     margin: 0 auto;
+        //     width: 262px;
+
+        .our-friends-link {
+            margin: 0 auto;
+            width: 262px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            letter-spacing: 0.06em;
+            color: $color-text-btn;
+            padding: 15px 51px;
+        }
+
+        // }
+
+        .stretch {
+            padding-top: 115px;
+        }
+    }
+
+}
