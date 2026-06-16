@@ -1,0 +1,29 @@
+.help {
+    text-align: center;
+    background: $color-bg-help;
+
+    .help-h2 {
+        margin-top: 80px;
+    }
+
+    .help-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 55px;
+        margin: 0 110px 70px;
+
+        .help-card {
+            margin: 32px 20px 0;
+
+            &:nth-child(6) {
+                margin-left: 100px;
+            }
+
+            &:last-child {
+                margin-right: 100px;
+            }
+        }
+    }
+}

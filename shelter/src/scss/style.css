@@ -493,6 +493,103 @@ template {
   margin: 21px 0 26px 0;
 }
 
+.our-friends {
+  background: #f6f6f6;
+  text-align: center;
+}
+.our-friends .wrap .our-friends__h2 {
+  padding: 80px 0 30px;
+}
+.our-friends .wrap .our-friends__h2.pets {
+  padding: 60px 0 30px;
+}
+.our-friends .wrap .our-friends__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 75px;
+}
+.our-friends .wrap .our-friends__container .our-friend__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+.our-friends .wrap .our-friends__container .our-friend__cards .our-friends__card-content {
+  background: #fafafa;
+}
+.our-friends .wrap .our-friends__container .our-friend__cards .our-friends__card-content:hover .pet-image {
+  transform: scale(0.9);
+  transition: 0.7s;
+}
+.our-friends .wrap .our-friends__container .our-friend__cards .our-friends__card-content:hover .our-friend_card-btn {
+  border: none;
+  background-color: #f1cdb3;
+}
+.our-friends .wrap .our-friends__container .our-friend__cards .our-friends__card-content .our-friends__card-h4 {
+  margin-bottom: 30px;
+}
+.our-friends .wrap .our-friends__container .our-friend__cards .our-friends__card-content .our-friend_card-btn {
+  width: 190px;
+  font-size: 19px;
+  background-color: #fafafa;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+.our-friends .wrap .our-friends__container .our-friend__cards .our-friends__card-content .our-friend_card-btn:hover {
+  border: none;
+  background-color: #f1cdb3;
+}
+.our-friends .wrap .our-friends__container .arrow-left {
+  transform: rotate(180deg);
+  margin-right: 38px;
+}
+.our-friends .wrap .our-friends__container .arrow-right {
+  margin-left: 38px;
+}
+.our-friends .wrap .our-friends-link {
+  margin: 0 auto;
+  width: 262px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  padding: 15px 51px;
+}
+.our-friends .wrap .stretch {
+  padding-top: 115px;
+}
+
+.help {
+  text-align: center;
+  background: #fff;
+}
+.help .help-h2 {
+  margin-top: 80px;
+}
+.help .help-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
+  margin: 0 110px 70px;
+}
+.help .help-container .help-card {
+  margin: 32px 20px 0;
+}
+.help .help-container .help-card:nth-child(6) {
+  margin-left: 100px;
+}
+.help .help-container .help-card:last-child {
+  margin-right: 100px;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
