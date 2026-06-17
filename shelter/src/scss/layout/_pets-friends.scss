@@ -1,0 +1,71 @@
+.our-friends.pets {
+    .wrap {
+        .our-friends__h2.pets {
+            margin-top: 17px;
+        }
+
+        .our-friends__container.pets {
+            margin-bottom: 63px;
+
+            .our-friend__cards {
+                gap: 33px 40px;
+                padding: 0 40px;
+
+            }
+        }
+
+        .pets-pagination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0 20px;
+            padding-bottom: 101px;
+
+            .disabled {
+                border: 2px solid $color-pagination-circle-decibel !important;
+
+
+                // .disabled-cursor {
+                //     cursor: default;
+                // }
+
+                &:hover {
+                    background: none !important;
+                    transition: none !important;
+                }
+
+                a {
+                    color: $color-pagination-elem-decibel !important;
+                }
+            }
+
+            .pagination-btn {
+                text-align: center;
+                border: 2px solid $color-pagination-circle;
+                border-radius: 100px;
+                padding: 12px 0px;
+                width: 52px;
+                height: 52px;
+
+                &:hover {
+                    background: $color-pagination-circle;
+                    transition: .5s linear;
+                }
+
+
+                a {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+                    color: $color-pagination-elem;
+                }
+
+            }
+        }
+    }
+
+
+}
