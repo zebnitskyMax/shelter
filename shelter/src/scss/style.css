@@ -735,6 +735,40 @@ template {
   color: #292929;
 }
 
+.header-burger {
+  width: 30px;
+  transition: 0.4s all;
+}
+.header-burger .burger::after {
+  content: "";
+  display: inline-block;
+  margin-bottom: 3px;
+  border: 2px solid #f1cdb3;
+  width: 30px;
+  height: 0px;
+}
+
+.header-burger.active-burger {
+  transform: rotate(90deg);
+  transition: 0.4s all;
+}
+
+.header-burger.pets .burger::after {
+  border: 2px solid #000;
+}
+
+.header-burger.disabled {
+  display: none;
+}
+
+.header-burger.pets.disabled {
+  display: none;
+}
+
+.header-nav.disabled-nav {
+  display: none;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

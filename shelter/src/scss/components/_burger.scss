@@ -1,0 +1,41 @@
+.header-burger {
+    width: 30px;
+    transition: .4s all;
+
+    .burger {
+        &::after {
+            content: '';
+            display: inline-block;
+            margin-bottom: 3px;
+            border: 2px solid $color-bg-burger-light;
+            width: 30px;
+            height: 0px;
+
+        }
+    }
+}
+
+.header-burger.active-burger {
+    transform: rotate(90deg);
+    transition: .4s all;
+}
+
+.header-burger.pets {
+    .burger {
+        &::after {
+            border: 2px solid $color-bg-burger-dark;
+        }
+    }
+}
+
+.header-burger.disabled {
+    display: none;
+}
+
+.header-burger.pets.disabled {
+    display: none;
+}
+
+.header-nav.disabled-nav {
+    display: none;
+}
