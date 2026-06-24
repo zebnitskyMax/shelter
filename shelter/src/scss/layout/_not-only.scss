@@ -66,7 +66,10 @@
             padding: 0 10px;
 
             .not-only__container {
+                flex-direction: column;
+
                 .not-only__content {
+                    width: 100%;
                     margin-bottom: 125px;
 
                     .not-only__h1 {
@@ -82,7 +85,7 @@
                     }
 
                     .not-only__btn {
-                        margin-left: 15% !important;
+                        margin-left: 15%;
                     }
                 }
 
