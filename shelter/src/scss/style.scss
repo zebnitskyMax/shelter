@@ -1,0 +1,191 @@
+@import './base/normalize';
+@import './base/constants';
+
+@import './components/btn';
+
+@import './layout/header';
+@import './layout/not-only';
+@import './layout/about';
+@import './layout/our-friends';
+@import './layout/help';
+@import './layout/in-addition';
+@import './layout/footer';
+
+@import './layout/pets-friends';
+
+@import './components/burger';
+
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    position: relative;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.font-Georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-Arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.text-h1.pets {
+    margin: 0;
+    display: inline;
+    line-height: 0;
+    color: $color-bg-ourFriends;
+}
+
+.text-h1 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 57px;
+    color: $color-h1-light;
+}
+
+.text-h2-dark {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: $color-h2-title-dark;
+}
+
+.text-h2-light {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: $color-h2-title-light;
+}
+
+.text-h4-dark {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $color-h4-dark;
+}
+
+.text-h4-brown {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $color-h4-brown;
+}
+
+.text-light-brown {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-text-light-brown;
+}
+
+.text-p-dark {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 24px;
+    color: $color-text-dark;
+}
+
+.text-logo-h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    color: $color-h2-logo;
+}
+
+.text-nav-links {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-nav-links;
+}
+
+.text-nav-links.pets {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-nav-links-dark;
+}
+
+.text-oppacity {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-text-oppacity;
+}
+
+.active {
+    // padding-bottom: 2px;
+    // border-bottom: 3px solid $color-bg-underline;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background: $color-bg-underline;
+        width: 100%;
+        height: 3px;
+
+    }
+}
+
+.disabled-cursor {
+    cursor: default;
+}
+
+.arrow {
+    // margin-top: 30px;
+    padding: 19px;
+    border-radius: 100px;
+    border: 2px solid $color-circle-arrow;
+    transition: .5s linear;
+
+    &:hover {
+        cursor: pointer;
+        background: $color-bg-circle-arrow;
+    }
+}

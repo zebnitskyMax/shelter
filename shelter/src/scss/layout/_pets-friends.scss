@@ -1,0 +1,119 @@
+.our-friends.pets {
+    .wrap {
+        .our-friends__h2.pets {
+            margin-top: 17px;
+        }
+
+        .our-friends__container.pets {
+            margin-bottom: 63px;
+
+            .our-friend__cards {
+                gap: 33px 40px;
+                padding: 0 40px;
+
+            }
+        }
+
+        .pets-pagination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0 20px;
+            padding-bottom: 101px;
+
+            .disabled {
+                border: 2px solid $color-pagination-circle-decibel !important;
+
+
+                // .disabled-cursor {
+                //     cursor: default;
+                // }
+
+                &:hover {
+                    background: none !important;
+                    transition: none !important;
+                }
+
+                a {
+                    color: $color-pagination-elem-decibel !important;
+                }
+            }
+
+            .pagination-btn {
+                text-align: center;
+                border: 2px solid $color-pagination-circle;
+                border-radius: 100px;
+                padding: 12px 0px;
+                width: 52px;
+                height: 52px;
+
+                &:hover {
+                    background: $color-pagination-circle;
+                    transition: .5s linear;
+                }
+
+
+                a {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+                    color: $color-pagination-elem;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:790px) {
+    .our-friends.pets {
+        .wrap {
+            .our-friends__h2.pets {
+                margin-top: 17px;
+                padding: 60px 0 5px;
+            }
+
+            .our-friends__container.pets {
+                margin-bottom: 36px;
+
+                .our-friend__cards.pets {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    height: 1365px;
+                    overflow: hidden;
+
+                }
+            }
+
+            .pets-pagination {
+                padding-bottom: 78px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .our-friends.pets {
+        .wrap {
+            .our-friends__h2.pets {
+                padding: 20px 0 20px;
+            }
+
+            .our-friends__container.pets {
+                margin-bottom: 42px;
+
+                .our-friend__cards.pets {
+                    margin-left: 0px;
+                }
+            }
+
+            .pets-pagination {
+                padding-bottom: 42px;
+                gap: 0 10px;
+            }
+        }
+    }
+}
