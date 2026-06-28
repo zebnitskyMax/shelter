@@ -80,3 +80,84 @@
         }
     }
 }
+
+@media screen and (max-width:790px) {
+    .footer {
+
+
+        .wrap {
+            .footer-container {
+                margin: 0 63px;
+                padding-top: 0px;
+
+                .footer-img {
+                    margin-top: 63px;
+                    margin-left: 26.5%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .footer {
+        .wrap {
+            .footer-container {
+                margin: 0 10px;
+
+                .footer-contacts {
+                    width: 85%;
+                    margin-left: 23px;
+                    margin-bottom: 20px;
+
+                    .footer-contacts__h2 {
+                        font-size: calc(25px + (10 + 10 * 0.7) * ((100vw - 320px) / 1280));
+                        text-align: center;
+                        line-height: 33px;
+                        margin-top: 30px;
+                    }
+
+                    .box-contacts {
+
+                        .contact-mail {
+                            margin-bottom: 41px;
+                        }
+
+                        .contact-phone {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .footer-location {
+                    margin-bottom: 37px;
+
+                    .footer-location__h2 {
+                        font-size: calc(25px + (10 + 10 * 0.7) * ((100vw - 320px) / 1280));
+                        text-align: center;
+                        line-height: 33px;
+                        width: 85%;
+                        margin-left: 23px;
+                    }
+
+                    .box-location {
+                        .loaction-first {
+                            margin-bottom: 41px;
+
+                            .location-usa {
+                                line-height: 24px;
+                                letter-spacing: 0.08em;
+                            }
+                        }
+                    }
+                }
+
+                .footer-img {
+                    margin-left: 7%;
+                    max-width: 86%;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
