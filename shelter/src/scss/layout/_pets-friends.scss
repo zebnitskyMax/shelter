@@ -66,6 +66,54 @@
             }
         }
     }
+}
 
+@media screen and (max-width:790px) {
+    .our-friends.pets {
+        .wrap {
+            .our-friends__h2.pets {
+                margin-top: 17px;
+                padding: 60px 0 5px;
+            }
 
+            .our-friends__container.pets {
+                margin-bottom: 36px;
+
+                .our-friend__cards.pets {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    height: 1365px;
+                    overflow: hidden;
+
+                }
+            }
+
+            .pets-pagination {
+                padding-bottom: 78px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .our-friends.pets {
+        .wrap {
+            .our-friends__h2.pets {
+                padding: 20px 0 20px;
+            }
+
+            .our-friends__container.pets {
+                margin-bottom: 42px;
+
+                .our-friend__cards.pets {
+                    margin-left: 0px;
+                }
+            }
+
+            .pets-pagination {
+                padding-bottom: 42px;
+                gap: 0 10px;
+            }
+        }
+    }
 }
