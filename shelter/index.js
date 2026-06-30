@@ -1,30 +1,25 @@
-console.log('Maximum score: 100 points')
+import {
+    html,
+    blocks,
+    blockCover,
+    pointDispose1,
+    pointDispose2,
+    cardPets,
+    moveToPoint1,
+    moveToPoint2,
+    btnClose,
+    delPopUpBlock
+} from './src/components_js/popUp.js'
 
-console.log(`Shelter-Part2: 100 points`)
 
-const burgerBTN = document.querySelector('.header-burger')
-const navHeader = document.querySelector('.header-nav')
-
-burgerBTN.addEventListener('click', openBurger);
-
-function openBurger() {
-    burgerBTN.classList.toggle('active-burger')
-}
-
-
-//find the width
-window.addEventListener('resize', (e) => {
-    windowSize(e.target.innerWidth)
-});
-
-function windowSize(width) {
-    if (width > 760) {
-        burgerBTN.classList.add('disabled')
-        navHeader.classList.remove('disabled-nav')
-    } else {
-        burgerBTN.classList.remove('disabled')
-        navHeader.classList.add('disabled-nav')
-    }
-
-}
-windowSize(window.innerWidth)
+import {
+    openBurger,
+    windowSize,
+    burgerBTN,
+    navHeader,
+    headerList,
+    coverBackground,
+    headerLink,
+    closeBurgerMenu,
+    body
+} from "./src/components_js/burger.js";
