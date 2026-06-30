@@ -2,6 +2,8 @@
 @import './base/constants';
 
 @import './components/btn';
+@import './components/burger';
+@import './components/cardPetPopUp';
 
 @import './layout/header';
 @import './layout/not-only';
@@ -13,7 +15,7 @@
 
 @import './layout/pets-friends';
 
-@import './components/burger';
+
 
 
 
@@ -159,7 +161,7 @@ img {
 .active {
     // padding-bottom: 2px;
     // border-bottom: 3px solid $color-bg-underline;
-    position: relative;
+    // position: relative;
 
     &::before {
         content: '';
@@ -187,5 +189,54 @@ img {
     &:hover {
         cursor: pointer;
         background: $color-bg-circle-arrow;
+    }
+}
+
+// .disabled-nav {
+//     display: none;
+// }
+.coverBackground.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    background: rgb(87, 81, 81, 0.7);
+    width: 100%;
+    height: 100vh;
+    transition: .6 all;
+}
+
+.coverBackground.pop-up__cover {
+    position: absolute;
+    // top: 1670px;
+    left: 0;
+    z-index: 30;
+    background: rgb(87, 81, 81, 0.7);
+    width: 100%;
+    height: 100%;
+    transition: .6 all;
+}
+
+.popUp-active {
+    position: absolute;
+    top: 23%;
+    left: 22%;
+    z-index: 40;
+    background: rgb(87, 81, 81, 0.7);
+    width: 900px;
+    height: 500px;
+    transition: .6 all;
+    background: #fff;
+}
+
+@media screen and (max-width:780px) {
+    .coverBackground.pop-up__cover {
+        // top: 2439px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .coverBackground.pop-up__cover {
+        // top: 1940px;
     }
 }
